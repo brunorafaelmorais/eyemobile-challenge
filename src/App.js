@@ -1,13 +1,16 @@
+import { BrowserRouter } from 'react-router-dom'
+
 import 'normalize.css'
 
+import Routes from './routes'
 import GlobalStyle from './styles/global'
 
 function App() {
   return (
-    <>
-      <h1>Hello World</h1>
+    <BrowserRouter>
+      <Routes />
       <GlobalStyle />
-    </>
+    </BrowserRouter>
   )
 }
 
