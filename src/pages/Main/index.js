@@ -1,5 +1,11 @@
+import Customers from './Customers'
+
 function Main() {
-  return <span>main page</span>
+  return (
+    <div>
+      <Customers />
+    </div>
+  )
 }
 
 export default Main
