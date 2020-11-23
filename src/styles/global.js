@@ -52,10 +52,19 @@ export default createGlobalStyle`
   }
 
   body {
+    background-color: #F5F7FA;
     -webkit-font-smoothing: antialiased;
   }
 
   body, input, button {
     font-family: 'Avenir', Arial, Helvetica, sans-serif;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  figure {
+    margin: 0;
   }
 `

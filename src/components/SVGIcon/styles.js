@@ -3,8 +3,8 @@ import { ReactSVG } from 'react-svg'
 
 export const Container = styled(ReactSVG)`
   fill: ${props => props.fill};
-  width: ${props => props.size}px;
-  height: ${props => props.size}px;
+  width: ${props => props.size};
+  height: ${props => props.size};
   display: inline-flex;
 
   > div,
