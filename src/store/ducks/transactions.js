@@ -1,7 +1,8 @@
 import api from '../../services/api'
 
 export const Types = {
-  GET_ALL: 'transactions/GET_ALL'
+  GET_ALL: 'transactions/GET_ALL',
+  FILTER_BY_DATE: 'transactions/FILTER_BY_DATE'
 }
 
 const INITIAL_STATE = {

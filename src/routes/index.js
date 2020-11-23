@@ -1,11 +1,11 @@
 import { Route, Switch } from 'react-router-dom'
 
-import Main from '../pages/Main'
+import Dashboard from '../pages/Dashboard'
 
 function Routes() {
   return (
     <Switch>
-      <Route path="/" exact component={Main} />
+      <Route path="/" component={Dashboard} />
     </Switch>
   )
 }
