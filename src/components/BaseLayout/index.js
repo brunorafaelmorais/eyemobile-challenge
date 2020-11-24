@@ -7,12 +7,16 @@ import SVGIcon from '../SVGIcon'
 import Logo from '../../assets/icons/ic_logo.svg'
 import DashIcon from '../../assets/icons/ic_dashboard.svg'
 import RegisterIcon from '../../assets/icons/ic_register.svg'
+import MenuIcon from '../../assets/icons/ic_menu.svg'
 
 function BaseLayout({ children, title = '' }) {
   return (
     <Container>
       <header>
         <div>
+          <div className="icon">
+            <SVGIcon icon={MenuIcon} />
+          </div>
           <nav>
             <Link to="/">Petshop</Link>
             {title && <span>{title}</span>}

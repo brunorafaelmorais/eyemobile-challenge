@@ -59,7 +59,7 @@ function Customers() {
 
   useEffect(() => {
     dispatch(getAllCustomers())
-  }, [])
+  }, [dispatch])
 
   const [valueSearch, setValueSearch] = useState(globalFilter)
   const handleChangeSearch = useAsyncDebounce(value => {

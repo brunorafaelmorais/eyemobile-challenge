@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 const HEADER_HEIGHT = 80
+const HEADER_HEIGHT_MOBILE = 56
 const ASIDE_WIDTH = 100
 
 export const Container = styled.main`
@@ -10,7 +11,7 @@ export const Container = styled.main`
 
   > header {
     width: 100%;
-    height: ${HEADER_HEIGHT}px;
+    height: ${HEADER_HEIGHT_MOBILE}px;
     position: fixed;
     top: 0;
     left: 0;
@@ -19,10 +20,6 @@ export const Container = styled.main`
     z-index: 9;
     display: flex;
     align-items: center;
-  }
-
-  > header {
-    padding-left: ${ASIDE_WIDTH}px;
   }
 
   > aside {
@@ -36,11 +33,21 @@ export const Container = styled.main`
   }
 
   > section {
-    padding-left: ${ASIDE_WIDTH}px;
-    padding-top: ${HEADER_HEIGHT}px;
+    padding-top: ${HEADER_HEIGHT_MOBILE}px;
   }
 
-  > header > div,
+  > header > div {
+    display: flex;
+    align-items: center;
+    padding: 10px 16px;
+
+    > .icon {
+      display: inline-flex;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+  }
+
   > section > div {
     padding: 16px;
   }
@@ -78,6 +85,28 @@ export const Container = styled.main`
 
     > header > div {
       padding: 16px 40px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    > header {
+      height: ${HEADER_HEIGHT}px;
+      padding-left: ${ASIDE_WIDTH}px;
+    }
+
+    > section {
+      padding-left: ${ASIDE_WIDTH}px;
+      padding-top: ${ASIDE_WIDTH}px;
+    }
+
+    > header > div > .icon {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    > aside {
+      visibility: hidden;
+      transform: translateX(-${ASIDE_WIDTH}px);
     }
   }
 `

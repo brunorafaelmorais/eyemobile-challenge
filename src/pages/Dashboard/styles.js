@@ -7,7 +7,6 @@ export const Container = styled.div`
   > nav {
     display: flex;
     flex-shrink: 0;
-    margin-right: 16px;
     flex-direction: row;
   }
 
@@ -52,6 +51,12 @@ export const Container = styled.div`
         margin-right: 0;
         margin-bottom: 20px;
       }
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    > nav {
+      margin-bottom: 16px;
     }
   }
 `
