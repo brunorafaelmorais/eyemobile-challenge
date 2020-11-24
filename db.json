@@ -6,7 +6,7 @@
       "type": "Receitas",
       "product_id": 26,
       "product_name": "Banho & Tosa",
-      "time": "2019-07-26 10:00:40.000000"
+      "time": "2020-11-24 10:00:40.000000"
     },
     {
       "id": 4513,
@@ -22,7 +22,7 @@
       "type": "Receitas",
       "product_id": 26,
       "product_name": "Banho & Tosa",
-      "time": "2019-07-26 10:12:40.000000"
+      "time": "2020-11-24 10:12:40.000000"
     },
     {
       "id": 4515,
@@ -150,7 +150,7 @@
       "product_id": 28,
       "type": "Receitas",
       "product_name": "Medicamentos",
-      "time": "2019-08-17 10:12:40.000000"
+      "time": "2020-11-10 10:12:40.000000"
     },
     {
       "id": 5521,
@@ -158,7 +158,7 @@
       "product_id": 28,
       "type": "Receitas",
       "product_name": "Medicamentos",
-      "time": "2019-08-17 10:50:40.000000"
+      "time": "2020-11-23 10:50:40.000000"
     },
     {
       "id": 6512,
@@ -166,7 +166,7 @@
       "product_id": 29,
       "type": "Despesas",
       "product_name": "Folha de pagamento",
-      "time": "2019-06-10 10:00:40.000000"
+      "time": "2020-11-24 10:00:40.000000"
     }
   ],
   "customers": [

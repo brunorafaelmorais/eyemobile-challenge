@@ -8,13 +8,16 @@ import Logo from '../../assets/icons/ic_logo.svg'
 import DashIcon from '../../assets/icons/ic_dashboard.svg'
 import RegisterIcon from '../../assets/icons/ic_register.svg'
 import MenuIcon from '../../assets/icons/ic_menu.svg'
+import { useState } from 'react'
 
 function BaseLayout({ children, title = '' }) {
+  const [menuOpen, setMenuOpen] = useState(false)
+
   return (
-    <Container>
+    <Container className={`${menuOpen ? 'menuOpened' : ''}`}>
       <header>
         <div>
-          <div className="icon">
+          <div className="icon" onClick={() => setMenuOpen(true)}>
             <SVGIcon icon={MenuIcon} />
           </div>
           <nav>
@@ -42,6 +45,7 @@ function BaseLayout({ children, title = '' }) {
       <section>
         <div>{children}</div>
       </section>
+      <div className="overlay" onClick={() => setMenuOpen(false)} />
     </Container>
   )
 }

@@ -30,6 +30,7 @@ export const Container = styled.main`
     left: 0;
     background-color: #09cfa3;
     z-index: 10;
+    transition: all 0.2s;
   }
 
   > section {
@@ -78,6 +79,17 @@ export const Container = styled.main`
     }
   }
 
+  > .overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 9;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: all 0.2s;
+  }
+
   @media screen and (min-width: 992px) {
     > section > div {
       padding: 32px 40px;
@@ -87,6 +99,7 @@ export const Container = styled.main`
       padding: 16px 40px;
     }
   }
+
   @media screen and (min-width: 768px) {
     > header {
       height: ${HEADER_HEIGHT}px;
@@ -101,12 +114,23 @@ export const Container = styled.main`
     > header > div > .icon {
       display: none;
     }
+
+    > .overlay {
+      display: none;
+    }
   }
 
   @media screen and (max-width: 768px) {
-    > aside {
-      visibility: hidden;
-      transform: translateX(-${ASIDE_WIDTH}px);
+    &:not(.menuOpened) {
+      > aside {
+        visibility: hidden;
+        transform: translateX(-${ASIDE_WIDTH}px);
+      }
+
+      > .overlay {
+        opacity: 0;
+        visibility: hidden;
+      }
     }
   }
 `

@@ -63,6 +63,8 @@ export const FilterBox = styled.div`
     padding: 0 16px;
     min-width: 64px;
     transition: all 0.2s;
+    white-space: nowrap;
+    flex-shrink: 0;
 
     > span {
       position: relative;
