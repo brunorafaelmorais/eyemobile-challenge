@@ -1,8 +1,10 @@
+import { Container } from './styles'
+
 function NotFound() {
   return (
-    <div>
-      <span>page not found</span>
-    </div>
+    <Container>
+      <span>404 | Page not found</span>
+    </Container>
   )
 }
 

@@ -38,6 +38,11 @@ function Dashboard() {
             <Route path={`${path}/customers`} component={Customers} />
 
             <Redirect from={path} exact to={`${path}/totals`} />
+
+            <Route
+              path={`${path}/*`}
+              component={() => <span>404 | Page not found</span>}
+            />
           </Switch>
         </section>
       </Container>
